@@ -10,7 +10,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Saari APIs par allow karo
-                .allowedOrigins("http://localhost:4200") // Angular ka default port
+                .allowedOrigins("cloud-task-frontend-c3t5177hk-vivek01.vercel.app") // Angular ka default port
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS"); // Saare operations allow karo
     }
 }
